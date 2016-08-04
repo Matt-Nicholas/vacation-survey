@@ -1,0 +1,10 @@
+h1{
+  text-align: center;
+  text-shadow: 5px 0 10px yellow, -5px 0 10px red;
+  font-family: cursive;
+
+}
+h3{
+  text-align: center;
+  font-family: cursive;
+}
