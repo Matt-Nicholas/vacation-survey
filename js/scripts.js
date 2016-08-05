@@ -13,7 +13,7 @@ $(document).ready(function(){ //Waits until the page is loaded to run JS
     if(budget == 0){
       alert("Please select a price range for you trip.")
     }else if(budget == 1){
-      alert("camping");
+      window.location.href = "http://www.gocampingamerica.com";
     }else if(budget >= 2 && family == "yes" && national == "yes" && activity != "skiing"){
       alert("disney");
     }else if(budget >= 2 && family == "no" && national == "no"){
