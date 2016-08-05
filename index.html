@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/styles.css" rel="stylesheet" media="screen">
   <script src="js/jquery-3.1.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Vacation Survey</title>
 </head>
 <body>
-  <container>
-    <h1>Vacation Survey</h1>
-    <h3>Tell us a little about what you are looking for in a vacation and we'll help you choose the perfect destination!</h3>
+  <div class="container">
+    <div id="hdr">
+      <h1>Vacation Survey</h1>
+      <h3>Tell us a little about what you are looking for in a vacation and we'll help you choose the perfect destination!</h3>
+    </div>
     <ol>
-      <!--Asks user if they would like to stay in the US-->
-      <li></li>
-
       <!--Ask user what thier budget is-->
+      <li>
+        <h4>What is you vacation budget?</h4>
+        <select class="form-control" id="budget">
+          <option value="1">Less than $500</option>
+          <option value="2">$500-$1000</option>
+          <option value="3">$1000-$2000</option>
+          <option value="4">Money ain't a thing!</option>
+        </select>
+      </li>
 
-      <li></li>
+      <!--Asks user if they would like to stay in the US-->
+
+      <li>
+        <h4>Would prefer to stay in the US?</h4>
+        <div class="radio">
+          <label><input type="radio" name="national" value="yes">Yes</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="national" value="no">No</label>
+        </div>
+      </li>
 
       <!--Asks user What activities they enjoy-->
 
-      <li></li>
+      <li>
+        <div class="blanks">
+          <form>
+            <div class="form-group">
+              <label for="idealVaca"><h4>In a few brief sentences tell us about your ideal vacation.</h4></label>
+              <input id="idealVaca" class="form-control" type="text">
+            </div>
+          </form>
+        </div>
+      </li>
 
       <!--Asks user if they would prefer a family fiendly vacation-->
 
-      <li></li>
+      <li>
+        <h4>Would you like a family friendly location?</h4>
+        <div class="radio">
+          <label><input type="radio" name="family" value="yes">Yes</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="family" value="no">No</label>
+        </div>
+      </li>
+
 
       <!--Asks the user what type of landscape they enjoy-->
 
-      <li></li>
+      <li>
+        <h4>Choose one activity that you would like to do on your vacation.</h4>
 
+        <div class="radio">
+          <label><input type="radio" name="family" value="skiing">Skiing</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="family" value="hiking">Hiking</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="family" value="shopping">Shopping</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="family" value="relaxing">Relaxing</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="family" value="swimming">Swimming</label>
+        </div>
+
+      </li>
     </ol>
-  </container>
+    <div class="push"></div>
+  </div>
 </body>
+<footer><small>&copy; 2016 Matt Nicholas, FeistyRodents&reg; Travel Agency</small></footer>
 </html>
